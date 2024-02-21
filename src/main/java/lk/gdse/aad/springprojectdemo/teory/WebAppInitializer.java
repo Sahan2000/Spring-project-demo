@@ -1,19 +1,19 @@
-package lk.gdse.aad.springprojectdemo;
+package lk.gdse.aad.springprojectdemo.teory;
 
-import lk.gdse.aad.springprojectdemo.config.WebAppConfig;
-import lk.gdse.aad.springprojectdemo.config.WebAppRootConfig;
+import lk.gdse.aad.springprojectdemo.teory.config.WebAppConfig;
+import lk.gdse.aad.springprojectdemo.teory.config.WebAppRootConfig;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
 public class WebAppInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
 
     @Override
-    protected Class<?>[] getRootConfigClasses() {
-        return new Class[]{WebAppRootConfig.class};
+    protected java.lang.Class<?>[] getRootConfigClasses() {
+        return new java.lang.Class[]{WebAppRootConfig.class};
     } // register root configuration class
 
     @Override
-    protected Class<?>[] getServletConfigClasses() {
-        return new Class[]{WebAppConfig.class};
+    protected java.lang.Class<?>[] getServletConfigClasses() {
+        return new java.lang.Class[]{WebAppConfig.class};
     } // register servlet configuration class
 
     @Override

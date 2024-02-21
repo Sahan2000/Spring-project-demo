@@ -1,4 +1,4 @@
-package lk.gdse.aad.springprojectdemo.controller;
+package lk.gdse.aad.springprojectdemo.teory.controller;
 
 import org.springframework.web.bind.annotation.*;
 
@@ -39,5 +39,15 @@ public class Teacher {
     String getParamDetails(@RequestParam("id") String id){
         System.out.println("Get Param Details : id "+id);
         return "Get Param Details : id "+id;
+    }
+
+    @PutMapping(params = {"number"})
+    String checkValue(@RequestParam ("number") int num){
+        return (num%2==0)? num+" is even" : num+" is odd";
+    }
+
+    @PostMapping(headers = {"X-token"})
+    String checkValue(@RequestHeader ("X-token") String header){
+        return header;
     }
 }

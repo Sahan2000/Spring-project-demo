@@ -1,4 +1,4 @@
-package lk.gdse.aad.springprojectdemo.controller;
+package lk.gdse.aad.springprojectdemo.teory.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
